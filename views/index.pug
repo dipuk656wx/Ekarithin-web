@@ -1,0 +1,47 @@
+html.no-js(lang='en-US', prefix='og: https://ogp.me/ns#')
+  head
+    title Ekarithin
+    link(rel='shortcut icon', type='./image/ico', href='./images/favicon.ico')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Cache-control', content='public')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(charset='UTF-8')
+    meta(name='description', content='Come and participate in Many Events')
+    meta(name='keywords', content='Fest Cultural')
+    meta(name='author', content='NIT Nagaland')
+    meta(property='og:title', content='Biggest Techno-Cultural Fest of Nagaland')
+    meta(property='og:description', content='')
+    meta(property='og:image', content='./images/metaog.jpg')
+    meta(name='msapplication-TileImage', content='./images/metaog.jpg')
+    style.
+      @font-face {
+      font-family: usecase;
+      src: url(./fonts/Montserrat-Regular.ttf);
+      }
+      @font-face {
+      font-family: usecase1;
+      src: url(./fonts/binggraeⅡbold.otf);
+      }
+      *{
+        font-family: usecase;
+      }
+      
+      *{
+      -ms-overflow-style: none;
+      }
+
+      *::-webkit-scrollbar {
+        background-color: rgba(24, 24, 24, var(--tw-bg-opacity, 1));
+      }
+      #app{
+        min-height: 100vh;
+      }
+
+body
+    #app
+    script
+      | window.javLanguage = '#{language}';
+    script(src="/dist/build.js")
+    script(src="/prevent.js")
+ 
+      
