@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import "./index.css";
 import Home from "./pages/home";
 import EventCard from "./components/EventCard/EventCard";
+import EventsPage from "./pages/event-page";
 
 
 const root = createRoot(document.getElementById("app") as HTMLElement);
@@ -25,7 +26,7 @@ root.render(
       <Routes>
 
         <Route path="/" element={<Home />} />
-        <Route path="/events" element={<EventCard/>}/>
+        <Route path="/events" element={<EventsPage/>}/>
         
       </Routes>
     </Router>

@@ -18,47 +18,47 @@ const EventCard = () => {
 
     return (
         <div>
-            <div className='flex items-center justify-center bg-black h-[800px] cursor-pointer'>
-                <div className='flip-card w-[600px] h-[360px] rounded-md ' onClick={handleflip}>
+
+            <div className='flip-card w-[340px] h-[360px] rounded-md cursor-pointer' onClick={handleflip}>
+                <motion.div
+                    className='flip-card-inner w-[100%] h-[100%]'
+                    initial={false}
+                    animate={{ rotateY: isFlip ? 180 : 360 }}
+                    transition={{ duration: 0.6 }}
+                    onAnimationComplete={() => setIsAnimation(false)}
+                >
+                    {/* <img src="/images/sky.jpeg" className='w-[100px] h-[100px]' alt="" /> */}
                     <motion.div
-                        className='flip-card-inner w-[100%] h-[100%]'
-                        initial={false}
-                        animate={{ rotateY: isFlip ? 180 : 360 }}
-                        transition={{ duration: 0.6 }}
-                        onAnimationComplete={() => setIsAnimation(false)}
+                        className='flip-card-front w-[100%] h-[100%] bg-cover border-[1px] text-white rounded-lg p-4'
+                        style={{
+                            backgroundImage: "url(/images/sky.jpeg)",
+                            backgroundSize: "cover", // Adjust the background size if needed
+                            backgroundPosition: "center", // Adjust the background position if needed
+                        }}
                     >
-                        {/* <img src="/images/sky.jpeg" className='w-[100px] h-[100px]' alt="" /> */}
-                        <motion.div
-                            className='flip-card-front w-[100%] h-[100%] bg-cover border-[1px] text-white rounded-lg p-4'
-                            style={{
-                                backgroundImage: "url(/images/sky.jpeg)",
-                                backgroundSize: "cover", // Adjust the background size if needed
-                                backgroundPosition: "center", // Adjust the background position if needed
-                            }}
-                        >
-                            <h1>Sky</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, maxime?</p>
-                        </motion.div>
+                        <h1>Sky</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, maxime?</p>
+                    </motion.div>
 
 
 
 
-                        <motion.div
-                            className='flip-card-black w-[100%] h-[100%] bg-cover border-[1px] text-white rounded-lg p-4'
-                            style={{
-                                backgroundImage: "url(/images/images.jpeg)",
-                                backgroundSize: "cover", // Adjust the background size if needed
-                                backgroundPosition: "center", // Adjust the background position if needed
-                            }}
-                        >
-                            <h1>Sky</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, maxime?</p>
-                        </motion.div>
+                    <motion.div
+                        className='flip-card-black w-[100%] h-[100%] bg-cover border-[1px] text-white rounded-lg p-4'
+                        style={{
+                            backgroundImage: "url(/images/images.jpeg)",
+                            backgroundSize: "cover", // Adjust the background size if needed
+                            backgroundPosition: "center", // Adjust the background position if needed
+                        }}
+                    >
+                        <h1>Sky</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, maxime?</p>
+                    </motion.div>
 
 
 
-                         </motion.div>
-                </div>
+                </motion.div>
+
             </div>
         </div>
     );
