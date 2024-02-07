@@ -23,6 +23,7 @@
   "include": [
     "./src/**/*.ts",
     "./src/**/*.js",
+    "./src/**/*.jsx",
     "./src/**/*.tsx",
     "./src/with-api/with-page-notify.tss",
     "./src/router.tsx"
