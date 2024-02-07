@@ -7,7 +7,7 @@ const DBURI = process.env.DBURI;
 mongoose.set('strictQuery', false);
 const connectDb = () => {
   mongoose
-    .connect(DBURI, {
+    .connect("mongodb+srv://Event_schedular:wbE2dSiyPx9q2LiE@event.plmcyq4.mongodb.net/Ekarithin", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })

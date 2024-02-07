@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import "./index.css";
 import Home from "./pages/home";
+import EventCard from "./components/EventCard/EventCard";
 
 
 const root = createRoot(document.getElementById("app") as HTMLElement);
@@ -22,7 +23,9 @@ root.render(
   <QueryClientProvider client={queryClient}>
     <Router>
       <Routes>
+
         <Route path="/" element={<Home />} />
+        <Route path="/events" element={<EventCard/>}/>
         
       </Routes>
     </Router>

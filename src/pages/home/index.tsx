@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { contentApi } from "../../common/api";
 import axios from "axios";
 import Header from "../../components/header";
+import EventCard from "../../components/EventCard/EventCard";
 const postData = async () => {
     try {
         const response = await axios.post('/api/register/registerEvent', {
@@ -28,6 +29,7 @@ const Home = () => {
             style={{ gridTemplateRows: "auto 1fr auto" }}
         >
             < Header />
+            {/* <EventCard/> */}
             <div className="w-[100vw] h-[100vh]" style={{background: "/images/backGround.svg"}}>
 
             </div>
