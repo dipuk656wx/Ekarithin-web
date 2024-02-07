@@ -6,6 +6,7 @@ import "./index.css";
 import Home from "./pages/home";
 import EventCard from "./components/EventCard/EventCard";
 import EventsPage from "./pages/event-page";
+import Registration from "./pages/register";
 
 
 const root = createRoot(document.getElementById("app") as HTMLElement);
@@ -24,11 +25,10 @@ root.render(
   <QueryClientProvider client={queryClient}>
     <Router>
       <Routes>
-
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/events" element={<EventsPage/>}/>
-        
+        <Route path="/register" element={<Registration/>}/>
       </Routes>
     </Router>
   </QueryClientProvider>

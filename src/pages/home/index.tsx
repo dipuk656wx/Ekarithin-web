@@ -3,26 +3,11 @@ import { contentApi } from "../../common/api";
 import axios from "axios";
 import Header from "../../components/header";
 import EventCard from "../../components/EventCard/EventCard";
-const postData = async () => {
-    try {
-        const response = await axios.post('/api/register/registerEvent', {
-            email: 'albin@gmail.com',
-            eventName: 'Trader Hunt',
-            paymentMode: 'Offline',
-            paid: false,
-        });
-        console.log('Response:', response.data);
-    } catch (error: any) {
-        console.error('Error:', error.message);
-    }
-};
+
 
 
 
 const Home = () => {
-    useEffect(() => {
-        postData()
-    }, [])
     return (
         <div
             className="fixed inset-0 grid text-white"
