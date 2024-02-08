@@ -1,4 +1,6 @@
+import AllCards from "../../components/EventCard/AllCards"
 import EventCard from "../../components/EventCard/EventCard"
+import TechnicalEventcard from "../../components/EventCard/TechnicalEventcard"
 import Header from "../../components/header"
 
 
@@ -15,10 +17,12 @@ const EventsPage = () => {
         >
             < Header />
             {/* <EventCard/> */}
+            <AllCards/>
             <div className="w-full overflow-y-scroll" style={{background: "/images/backGround.svg"}}>
                 {eventsName.map((item) => (
                     <div>
-                        <EventCard />
+                        Technical 
+                        
                     </div>
                 ))}
             </div>

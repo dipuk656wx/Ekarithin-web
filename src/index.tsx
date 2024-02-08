@@ -7,6 +7,8 @@ import Home from "./pages/home";
 import EventCard from "./components/EventCard/EventCard";
 import EventsPage from "./pages/event-page";
 import Registration from "./pages/register";
+import TechnicalEventcard from "./components/EventCard/TechnicalEventcard";
+import SportEventCard from "./components/EventCard/SportsEventCard";
 
 
 const root = createRoot(document.getElementById("app") as HTMLElement);
@@ -29,6 +31,9 @@ root.render(
         <Route path="/home" element={<Home />} />
         <Route path="/events" element={<EventsPage/>}/>
         <Route path="/register" element={<Registration/>}/>
+        <Route path="/technical-Events" element={<TechnicalEventcard/>}/>
+        <Route path="/cultural-events" element={<EventCard/>}/>
+        <Route path="/Sport-events" element={<SportEventCard/>}/>
       </Routes>
     </Router>
   </QueryClientProvider>
