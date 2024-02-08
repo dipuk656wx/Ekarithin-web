@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+
 const postData = async (email: string, eventName: string, paymentMode: string, paid: boolean) => {
     try {
         const response = await axios.post('/api/register/registerEvent', {
@@ -14,6 +15,7 @@ const postData = async (email: string, eventName: string, paymentMode: string, p
         console.error('Error:', error.message);
     }
 };
+
 function Registration() {
     const [formData, setFormData] = useState({
         name: '',
@@ -22,6 +24,7 @@ function Registration() {
         college: ''
     });
     const navigate = useNavigate();
+
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setFormData(prevState => ({
@@ -30,42 +33,40 @@ function Registration() {
         }));
     };
 
-    const onChange = (e: ChangeEvent<HTMLInputElement>) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value })
-    }
-
-
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const { name, email, phone, college } = formData;
         postData(email, name, phone, false);
-    }
+    };
+
     return (
-        <div className="max-w-md mx-auto bg-white rounded p-6">
-            <h2 className="text-2xl font-semibold mb-4">Registration Form</h2>
-            <form onSubmit={handleSubmit}>
-                <div className="mb-4">
-                    <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
-                    <input type="text" id="name" name="name" className="form-input w-full" onChange={handleChange} value={formData.name} />
-                </div>
-                <div className="mb-4">
-                    <label htmlFor="email" className="block text-gray-700 font-bold mb-2">Email</label>
-                    <input type="email" id="email" name="email" className="form-input w-full" onChange={handleChange} value={formData.email} />
-                </div>
-                <div className="mb-4">
-                    <label htmlFor="phone" className="block text-gray-700 font-bold mb-2">Phone Number</label>
-                    <input type="text" id="phone" name="phone" className="form-input w-full" onChange={handleChange} value={formData.phone} />
-                </div>
-                <div className="mb-4">
-                    <label htmlFor="college" className="block text-gray-700 font-bold mb-2">College (optional)</label>
-                    <input type="text" id="college" name="college" className="form-input w-full" onChange={handleChange} value={formData.college} />
-                </div>
-                <div className="mt-6">
-                    <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Submit</button>
-                </div>
-            </form>
+        <div className="flex items-center justify-center min-h-screen bg-black">
+            <div className='flex flex-col items-center justify-center w-full ' style={{
+                backgroundImage: "url('/images/img.jpg')",
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                height: '100vh'
+            }}>
+                <h2 className="text-amber-600 text-2xl font-semibold mb-2">Registration Form</h2>
+                <form onSubmit={handleSubmit} className="flex flex-col mt-2 opacity-65">
+                    <label htmlFor="name" className="font-bold text-lg text-white">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Name" className="border rounded-lg py-3 px-3 mb-6 bg-black border-amber-500 placeholder-white-500 text-white" onChange={handleChange} value={formData.name} style={{ boxShadow: '#ff7600 5px 5px 15px' }} />
+
+                    <label htmlFor="email" className="font-bold text-lg text-white">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" className="border rounded-lg py-3 px-3 mb-6 bg-black border-amber-500 placeholder-white-500 text-white" onChange={handleChange} value={formData.email} style={{ boxShadow: '#ff7600 5px 5px 15px' }} />
+
+                    <label htmlFor="phone" className="font-bold text-lg text-white">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number" className="border rounded-lg py-3 px-3 mb-6 bg-black border-amber-500 placeholder-white-500 text-white" onChange={handleChange} value={formData.phone} style={{ boxShadow: '#ff7600 5px 5px 15px' }} />
+
+                    <label htmlFor="college" className="font-bold text-lg text-white">College (optional):</label>
+                    <input type="text" id="college" name="college" placeholder="College" className="border rounded-lg py-3 px-3 mt-2 mb-6 bg-black border-amber-500 placeholder-white-500 text-white" onChange={handleChange} value={formData.college} style={{ boxShadow: '#ff7600 5px 5px 15px' }} />
+
+                    <button type="submit" className=" hover:bg-purple-500  hover:text-white  border-2   shadow-lg bg-orange-400 text-lg rounded-lg py-3 font-semibold">Submit</button>
+                </form>
+            </div>
         </div>
-    )
-};
+    );
+}
 
 export default Registration;
