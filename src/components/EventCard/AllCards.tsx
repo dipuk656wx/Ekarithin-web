@@ -17,6 +17,7 @@ interface AllCardsState {
 
 export default class AllCards extends Component<{}, AllCardsState> {
   slides: Slide[];
+  intervalId?: NodeJS.Timeout; // Marking as optional
 
   constructor(props: {}) {
     super(props);
@@ -26,6 +27,8 @@ export default class AllCards extends Component<{}, AllCardsState> {
       showNavigation: true,
       config: { tension: 120, friction: 14, precision: 0.1 }
     };
+
+
 
     this.slides = [
       {
@@ -110,28 +113,39 @@ export default class AllCards extends Component<{}, AllCardsState> {
       }
     ];
   }
+  componentDidMount() {
+    this.intervalId = setInterval(() => {
+      this.setState((prevState) => ({
+        goToSlide: (prevState.goToSlide + 1) % this.slides.length
+      }));
+    }, 2000); // Adjust the interval time (in milliseconds) as needed
+  }
+
+  componentWillUnmount() {
+    if (this.intervalId) clearInterval(this.intervalId);
+  }
 
   render() {
     return (
       <div className="container mx-auto px-4 py-8">
-                  <div className=" text-black">
-            <span className="mr-4">
-              <Link to="/technical-Events" className="hover:text-gray-800">
-                Technical Events
-              </Link>
-            </span>
-            <span className="mr-4">
-              <Link to="/cultural-events" className="hover:text-gray-800">
-                Cultural
-              </Link>
-            </span>
-            <span>
-              <Link to="/Sport-events" className="hover:text-gray-800">
-                Sports
-              </Link>
-            </span>
-          </div>
-       <h1 className="text-black text-center mb-4">Gallery Section</h1>
+        <div className="text-black">
+          <span className="mr-4">
+            <Link to="/technical-Events" className="hover:text-gray-800">
+              Technical Events
+            </Link>
+          </span>
+          <span className="mr-4">
+            <Link to="/cultural-events" className="hover:text-gray-800">
+              Cultural
+            </Link>
+          </span>
+          <span>
+            <Link to="/Sport-events" className="hover:text-gray-800">
+              Sports
+            </Link>
+          </span>
+        </div>
+        <h1 className="text-black text-center mb-4">Gallery Section</h1>
         <div className="max-w-screen-lg mx-auto">
           <Carousel
             slides={this.slides}
