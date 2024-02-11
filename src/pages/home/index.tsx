@@ -10,13 +10,14 @@ const Home = () => {
       className="fixed inset-0 grid text-white"
       style={{ gridTemplateRows: "auto 1fr auto" }}
     >
+      <div className="header">
       <Header />
-      {/* <EventCard/> */}
+      </div>
       <div
-        className="w-[100vw] h-[100vh]"
+        className=""
         style={{ background: "/images/backGround.svg" }}
       >
-        <iframe src="/index.html" width="100%" height="100%" ></iframe>
+        <iframe src="/index.html" width="" height="" ></iframe>
       </div>
     </div>
   );

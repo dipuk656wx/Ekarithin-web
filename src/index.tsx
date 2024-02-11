@@ -6,9 +6,10 @@ import "./index.css";
 import Home from "./pages/home";
 import EventCard from "./components/EventCard/EventCard";
 import EventsPage from "./pages/event-page";
-import Registration from "./pages/register";
+
 import TechnicalEventcard from "./components/EventCard/TechnicalEventcard";
 import SportEventCard from "./components/EventCard/SportsEventCard";
+import Registration from "./pages/Registration";
 
 
 const root = createRoot(document.getElementById("app") as HTMLElement);
