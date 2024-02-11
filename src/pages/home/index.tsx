@@ -10,6 +10,7 @@ const Home = () => {
       className="fixed inset-0 grid text-white"
       style={{ gridTemplateRows: "auto 1fr auto" }}
     >
+     
       <div className="header">
       <Header />
       </div>
