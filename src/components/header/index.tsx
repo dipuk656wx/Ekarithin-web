@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useClickOutside from "../../common/use-click-outside";
 import './style.css'
+// import Heaader1 from "."
 const pages = [
     { label: "Events", value: "events" },
     { label: "Register", value: "register" },
@@ -24,8 +25,11 @@ const Header = () => {
 
     return (
         <div className="relative">
+            {/* <Header/> */}
+            
             <div className="text-white flex justify-between p-2 z-10 border-b border-b-gray-light bg-gray-dark">
                 <div className="font-bold items-center justify-center flex">
+
                     <img src="/images/ekarikthin logo.png" className="w-[50px] h-[50px]" alt="Logo" />
                     <span className="pt-2" style={{ fontFamily: 'ekarikthin' }}>
                         karikthin

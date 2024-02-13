@@ -10,6 +10,8 @@ import EventsPage from "./pages/event-page";
 import TechnicalEventcard from "./components/EventCard/TechnicalEventcard";
 import SportEventCard from "./components/EventCard/SportsEventCard";
 import Registration from "./pages/Registration";
+// import Header from "./components/Header";
+
 
 
 const root = createRoot(document.getElementById("app") as HTMLElement);
@@ -27,6 +29,7 @@ const queryClient = new QueryClient({
 root.render(
   <QueryClientProvider client={queryClient}>
     <Router>
+      {/* <Header/> */}
 
       <Routes>
         <Route path="/" element={<Home />} />

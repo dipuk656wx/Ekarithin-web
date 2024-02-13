@@ -1,7 +1,7 @@
 import AllCards from "../../components/EventCard/AllCards"
 import EventCard from "../../components/EventCard/EventCard"
 import TechnicalEventcard from "../../components/EventCard/TechnicalEventcard"
-import Header from "../../components/header"
+import Header from "../../components/Header"
 
 
 const eventsName = [
