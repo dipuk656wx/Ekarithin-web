@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { contentApi } from "../../common/api";
 import axios from "axios";
-import Header from "../../components/header";
+// import Header from "../../components/Header";
+
 import EventCard from "../../components/EventCard/EventCard";
 
 const Home = () => {
@@ -10,16 +11,10 @@ const Home = () => {
       className="fixed inset-0 grid text-white"
       style={{ gridTemplateRows: "auto 1fr auto" }}
     >
-     
-      <div className="header">
-      <Header />
-      </div>
-      <div
-        className=""
-        style={{ background: "/images/backGround.svg" }}
-      >
-        <iframe src="/index.html" width="" height="" ></iframe>
-      </div>
+
+      {/* <Header /> */}
+      <div className="" style={{ background: "/images/backGround.svg" }}></div>
+      <iframe src="/index.html" width="100%" height="100%"></iframe>
     </div>
   );
 };
