@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { config } from "react-spring";
 import Carousel from "react-spring-3d-carousel";
+import EventCard from "./EventCard";
 
 interface Slide {
   key: number;
@@ -128,9 +129,11 @@ export default class AllCards extends Component<{}, AllCardsState> {
   render() {
     return (
       <div className="container mx-auto px-4 py-8">
-        <div className="text-black">
+    
+        
+        <div className="text-white">
           <span className="mr-4">
-            <Link to="/technical-Events" className="hover:text-gray-800">
+            <Link to="/technical-Events" className="hover:text-green-800">
               Technical Events
             </Link>
           </span>

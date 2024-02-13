@@ -27,10 +27,9 @@ const queryClient = new QueryClient({
 root.render(
   <QueryClientProvider client={queryClient}>
     <Router>
-
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/home" element={<Home/>} />
         <Route path="/events" element={<EventsPage/>}/>
         <Route path="/register" element={<Registration/>}/>
         <Route path="/technical-Events" element={<TechnicalEventcard/>}/>

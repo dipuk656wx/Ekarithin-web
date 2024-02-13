@@ -17,7 +17,7 @@ const TechnicalEventcard = () => {
     }
 
     return (
-        <div>
+        <div className=' h-full w-full' style={{backgroundImage: `url("/backGround.svg")`}} >
 
             <div className='flip-card w-[340px] h-[360px] rounded-md cursor-pointer' onClick={handleflip}>
                 <motion.div

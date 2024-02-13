@@ -17,7 +17,7 @@ const SportEventCard = () => {
     }
 
     return (
-        <div>
+        <div style={{backgroundImage: `url("/backGround.svg")`}} >
 
             <div className='flip-card w-[340px] h-[360px] rounded-md cursor-pointer' onClick={handleflip}>
                 <motion.div
@@ -61,7 +61,8 @@ const SportEventCard = () => {
                 </motion.div>
 
             </div>
-        </div>
+            </div>
+        
     );
 }
 

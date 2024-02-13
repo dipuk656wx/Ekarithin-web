@@ -1,34 +1,19 @@
-import AllCards from "../../components/EventCard/AllCards"
-import EventCard from "../../components/EventCard/EventCard"
-import TechnicalEventcard from "../../components/EventCard/TechnicalEventcard"
-import Header from "../../components/header"
+import AllCards from "../../components/EventCard/AllCards";
+import EventCard from "../../components/EventCard/EventCard";
+import TechnicalEventcard from "../../components/EventCard/TechnicalEventcard";
+import Header from "../../components/header";
 
+const eventsName = ["andsdaf", "asdfklajskdf", "asdfa"];
 
-const eventsName = [
-    "andsdaf", "asdfklajskdf", "asdfa"
-]
 const EventsPage = () => {
-
-
     return (
-        <div
-            className="fixed inset-0 grid text-white"
-            style={{ gridTemplateRows: "auto 1fr auto" }}
-        >
-            < Header />
+        <div className="fixed inset-0 grid text-white" style={{ gridTemplateRows: "auto 1fr auto", backgroundImage: `url("/backGround.svg")` }}>
+            <Header />
             {/* <EventCard/> */}
-            <AllCards/>
-            <div className="w-full overflow-y-scroll" style={{background: "/images/backGround.svg"}}>
-                {eventsName.map((item) => (
-                    <div>
-                        Technical 
-                        
-                    </div>
-                ))}
-            </div>
+            <AllCards />
+          
         </div>
-    )
+    );
 }
-
 
 export default EventsPage;
