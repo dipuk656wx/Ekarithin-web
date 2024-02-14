@@ -1,5 +1,6 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
+// import Registration from './index';/
 
 function Registration() {
   const [formData, setFormData] = useState({
@@ -50,7 +51,16 @@ function Registration() {
   };
   return (
     <div>
+
       <div className="relative min-h-screen grid bg-black ">
+      <span style={
+        
+        {
+          color:"white",
+          paddingLeft:"2px"
+       
+        }
+      }>Register only if you belong to NITN family*</span>
         <div className="flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0 ">
           <div
             className=" sm:w-1/2 xl:w-3/5 bg-black-500 h-full hidden md:flex flex-auto items-center justify-center p-10 overflow-hidden  text-white bg-no-repeat bg-cover relative"

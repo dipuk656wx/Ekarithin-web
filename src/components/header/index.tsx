@@ -5,7 +5,7 @@ import './style.css'
 // import Heaader1 from "."
 const pages = [
     { label: "Events", value: "events" },
-    { label: "Register", value: "register" },
+    { label: "Register (NITN)", value: "register" },
     { label: "Home", value: "home" },
 ];
 const Header = () => {

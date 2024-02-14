@@ -6,7 +6,7 @@
 export const eventsData = [
   {
     id: 1,
-    image: "../images/coderaze.png",//poser of particular Event
+    image: "../images/coderaze.png",
     name: "CodeRaze",
     description:
     "Calling all code wizards! CodeRaze beckons. Will you answer the challenge?",

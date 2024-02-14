@@ -68,7 +68,7 @@ export const SportAllData = [
       team: "1",
       category: "Sports",
       contactInfo: ["9774526944", "8131064155"],
-      fees:"₹300 for home state",
+      fees:"₹300 for home state ",
       location: "To be updated",
       date: "02 March 2024",
       link: "",

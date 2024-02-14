@@ -27,7 +27,7 @@ export const CulturalEvent = [
         location: "Basketball Court, Nit Nagaland ",
         date: "02 March 2024",
         
-        link: "https://www.google.com",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSczGo6OwAHssO_Z2i80Al0_IXjiFRJ41f0w1mO20j1ZiIoTtA/viewform?usp=sf_link",
       },
       {
         id: 13,
