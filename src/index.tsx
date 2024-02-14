@@ -10,6 +10,8 @@ import EventsPage from "./pages/event-page";
 import TechnicalEventcard from "./components/EventCard/TechnicalEventcard";
 import SportEventCard from "./components/EventCard/SportsEventCard";
 import Registration from "./pages/Registration";
+import EventPage from "./components/SingleEventDetail/SingalEventDetail";
+
 
 
 const root = createRoot(document.getElementById("app") as HTMLElement);
@@ -31,7 +33,7 @@ root.render(
         <Route path="/" element={<Home/>} />
         <Route path="/home" element={<Home/>} />
         <Route path="/events" element={<EventsPage/>}/>
-        <Route path="/register" element={<Registration/>}/>
+        <Route path="/register" element={<EventPage/>}/>
         <Route path="/technical-Events" element={<TechnicalEventcard/>}/>
         <Route path="/cultural-events" element={<EventCard/>}/>
         <Route path="/Sport-events" element={<SportEventCard/>}/>

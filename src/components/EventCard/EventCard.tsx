@@ -42,7 +42,7 @@ const EventCard = () => {
                             <motion.div
                                 className='flip-card-front w-full h-full bg-cover border-[1px] text-white rounded-lg p-4 relative'
                                 style={{
-                                    backgroundImage: `url(${event.image})`, // Use event.image if available
+                                    backgroundImage: `url(${event.image})`, 
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                 }}
