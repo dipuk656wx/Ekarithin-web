@@ -31,22 +31,23 @@ const TechnicalEvent = () => {
     return (
         <div>
             <Header />
-            <div style={{ backgroundImage: `url("/backGround.svg")` }} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1 md:gap-2 xl:gap-2 px-3 bg-slate-700 h-full w-full"> {/* Adjust grid layout based on screen size */}
+            <div style={{ backgroundImage: `url("/backGround.svg")` }} className="p-auto overflow-scroll grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1 md:gap-2 xl:gap-2 px-3 bg-slate-700 h-full w-full"> {/* Adjust grid layout based on screen size */}
                 {TechEventData.map((event: Event, index: number) => ( // Explicitly typing event and index
-                    <div key={index} className={`flip-card w-[400px] h-[360px] rounded-md cursor-pointer ${flippedIndex === index ? 'flipped' : ''}`} onClick={() => handleflip(index)}>
+                    <div key={index} className={`flip-card md:w-[300px] md:h-[300px] rounded-md cursor-pointer ${flippedIndex === index ? 'flipped' : ''}`} onClick={() => handleflip(index)}>
                         <motion.div
-                            className='flip-card-inner w-full h-full'
+                            className='m-4 mb-4 flip-card-inner w-full h-full'
                             initial={false}
                             animate={{ rotateY: flippedIndex === index ? 180 : 360 }}
                             transition={{ duration: 0.6 }}
                         >
                             <motion.div
-                                className='flip-card-front w-full h-full bg-cover border-[1px] text-white rounded-lg p-4 relative'
+                                className=' p-4 overflow-hidden flip-card-front w-full h-full bg-cover border-[1px] text-white rounded-lg pb-4  relative'
                                 style={{
                                     backgroundImage: `url(${event.image})`, // Using event.image from TechEventData
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                 }}
+                                whileHover={{ scale: 1.1, transition: { duration: 0.5 } }} // Scale up on hover with transition
                             >
                                 <div>
                                     <p>{event.name}</p> {/* Displaying event name */}

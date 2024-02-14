@@ -31,7 +31,7 @@ const SportEventCard = () => {
     return (
         <div>
             <Header />
-            <div style={{ padding: "2px", backgroundImage: `url("/backGround.svg")` }} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1 md:gap-2 xl:gap-2 px-3 bg-slate-700">
+            <div style={{ padding: "2px", backgroundImage: `url("/backGround.svg")` }} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols- lg:grid-cols-3 xl:grid-cols-3 gap-1 md:gap-2 xl:gap-2 px-3 bg-slate-700">
                 {SportAllData.map((event: Event, index: number) => (
                     <div key={index} className={`flip-card w-[400px] h-[360px] rounded-md cursor-pointer ${flippedIndex === index ? 'flipped' : ''}`} onClick={() => handleflip(index)}>
                         <motion.div
@@ -47,6 +47,7 @@ const SportEventCard = () => {
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                 }}
+                                whileHover={{ scale: 1.1, transition: { duration: 0.5 } }} // Scale up on hover
                             >
                                 <div>
                                     <p>{event.name}</p>
