@@ -4,6 +4,7 @@ const { Schema } = mongoose;
 const register = new Schema({
   Email : String,
   EventsRegistered : Array,
+  
 }, {
   timestamps: {
     createdAt: 'created_at',

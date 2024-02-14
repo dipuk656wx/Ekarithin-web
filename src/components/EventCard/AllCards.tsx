@@ -18,7 +18,7 @@ interface AllCardsState {
 
 export default class AllCards extends Component<{}, AllCardsState> {
   slides: Slide[];
-  intervalId?: NodeJS.Timeout; // Marking as optional
+  intervalId?: NodeJS.Timeout;
 
   constructor(props: {}) {
     super(props);
@@ -29,15 +29,13 @@ export default class AllCards extends Component<{}, AllCardsState> {
       config: { tension: 120, friction: 14, precision: 0.1 }
     };
 
-
-
     this.slides = [
       {
         key: 1,
         content: (
           <img
-            src="https://picsum.photos/800/801/?random"
-            alt="1"
+          src="/images/Arts.png"
+          alt="1"
             className="w-full h-auto"
           />
         )
@@ -46,7 +44,7 @@ export default class AllCards extends Component<{}, AllCardsState> {
         key: 2,
         content: (
           <img
-            src="https://picsum.photos/800/802/?random"
+            src="/images/mlbb.png"
             alt="2"
             className="w-full h-auto"
           />
@@ -56,7 +54,7 @@ export default class AllCards extends Component<{}, AllCardsState> {
         key: 3,
         content: (
           <img
-            src="https://picsum.photos/600/803/?random"
+            src="/images/PitchPerfect.jpg"
             alt="3"
             className="w-full h-auto"
           />
@@ -66,7 +64,7 @@ export default class AllCards extends Component<{}, AllCardsState> {
         key: 4,
         content: (
           <img
-            src="https://picsum.photos/800/500/?random"
+            src="/images/Rockville.png"
             alt="4"
             className="w-full h-auto"
           />
@@ -76,7 +74,7 @@ export default class AllCards extends Component<{}, AllCardsState> {
         key: 5,
         content: (
           <img
-            src="https://picsum.photos/800/804/?random"
+            src="/images/RoboGp.png"
             alt="5"
             className="w-full h-auto"
           />
@@ -86,7 +84,7 @@ export default class AllCards extends Component<{}, AllCardsState> {
         key: 6,
         content: (
           <img
-            src="https://picsum.photos/500/800/?random"
+            src="/images/ritzy.jpg"
             alt="6"
             className="w-full h-auto"
           />
@@ -96,7 +94,7 @@ export default class AllCards extends Component<{}, AllCardsState> {
         key: 7,
         content: (
           <img
-            src="https://picsum.photos/800/600/?random"
+            src="/images/coderaze.png"
             alt="7"
             className="w-full h-auto"
           />
@@ -106,7 +104,7 @@ export default class AllCards extends Component<{}, AllCardsState> {
         key: 8,
         content: (
           <img
-            src="https://picsum.photos/805/800/?random"
+            src="/images/Shark.png"
             alt="8"
             className="w-full h-auto"
           />
@@ -114,6 +112,7 @@ export default class AllCards extends Component<{}, AllCardsState> {
       }
     ];
   }
+
   componentDidMount() {
     this.intervalId = setInterval(() => {
       this.setState((prevState) => ({
@@ -129,8 +128,6 @@ export default class AllCards extends Component<{}, AllCardsState> {
   render() {
     return (
       <div className="container mx-auto px-4 py-8">
-    
-        
         <div className="text-white">
           <span className="mr-4">
             <Link to="/technical-Events" className="hover:text-green-800">

@@ -1,68 +1,78 @@
 import React, { useState } from 'react';
 import './EventCard.css';
 import { motion } from 'framer-motion';
-// import space1 from '../../../public/images/images (1).jpeg';
-// import space2 from '../../../public/images/images.jpeg';
+// import { TechEventData } from '../../TechData'; // Importing event data
+import  {SportAllData}  from '../../SportData';
+// SportAllData
+// SportData
+
+
+interface Event {
+    id: number;
+    image: string;
+    name: string;
+    description: string;
+    rules: string[];
+    prizes: string[];
+    team: string;
+    category: string;
+    fees: string;
+    contactInfo: string[];
+    location: string;
+    date: string;
+    link: string;
+}
 
 const SportEventCard = () => {
-    const events = ["ffgcg", "hjhg", "hjjhvgv"];
-    const [isFlip, setFliplled] = useState(false);
-    const [isAnimation, setIsAnimation] = useState(false);
+    const [flippedIndex, setFlippedIndex] = useState<number>(-1);
 
-    function handleflip() {
-        if (!isAnimation) {
-            setFliplled(!isFlip);
-            setIsAnimation(true);
-        }
+    function handleflip(index: number) {
+        setFlippedIndex(index === flippedIndex ? -1 : index);
     }
 
     return (
-        <div style={{backgroundImage: `url("/backGround.svg")`}} >
-
-            <div className='flip-card w-[340px] h-[360px] rounded-md cursor-pointer' onClick={handleflip}>
-                <motion.div
-                    className='flip-card-inner w-[100%] h-[100%]'
-                    initial={false}
-                    animate={{ rotateY: isFlip ? 180 : 360 }}
-                    transition={{ duration: 0.6 }}
-                    onAnimationComplete={() => setIsAnimation(false)}
-                >
-                    {/* <img src="/images/sky.jpeg" className='w-[100px] h-[100px]' alt="" /> */}
+        <div>
+        <div style={{backgroundImage: `url("/backGround.svg")`}} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1 md:gap-2 xl:gap-2 px-3 bg-slate-700"> {/* Adjust grid layout based on screen size */}
+            {SportAllData.map((event: Event, index: number) => ( // Explicitly typing event and index
+                <div key={index} className={`flip-card w-[400px] h-[360px] rounded-md cursor-pointer ${flippedIndex === index ? 'flipped' : ''}`} onClick={() => handleflip(index)}>
                     <motion.div
-                        className='flip-card-front w-[100%] h-[100%] bg-cover border-[1px] text-white rounded-lg p-4'
-                        style={{
-                            backgroundImage: "url(/images/sky.jpeg)",
-                            backgroundSize: "cover", // Adjust the background size if needed
-                            backgroundPosition: "center", // Adjust the background position if needed
-                        }}
+                        className='flip-card-inner w-full h-full'
+                        initial={false}
+                        animate={{ rotateY: flippedIndex === index ? 180 : 360 }}
+                        transition={{ duration: 0.6 }}
                     >
-                        <h1>Sky</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, maxime?</p>
+                        <motion.div
+                            className='flip-card-front w-full h-full bg-cover border-[1px] text-white rounded-lg p-4 relative'
+                            style={{
+                                backgroundImage: `url(${event.image})`, // Using event.image from SportData
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                            }}
+                        >
+                            <div>
+                                <p>{event.name}</p> {/* Displaying event name */}
+                            </div>
+                            <div className="Register-buttons-container">
+                                <button className='Register-button' onClick={() => window.location.href = event.link}>Register</button>
+                                <button className='Details-button' onClick={() => window.location.href = '/Details'}>Details</button>
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            className='flip-card-back w-full h-full bg-cover border-[1px] text-white rounded-lg p-4'
+                            style={{
+                                backgroundImage: "url(${event.image})",
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                            }}
+                        >
+                            {/* Add content for the back of the card if needed */}
+                        </motion.div>
                     </motion.div>
-
-
-
-
-                    <motion.div
-                        className='flip-card-black w-[100%] h-[100%] bg-cover border-[1px] text-white rounded-lg p-4'
-                        style={{
-                            backgroundImage: "url(/images/images.jpeg)",
-                            backgroundSize: "cover", // Adjust the background size if needed
-                            backgroundPosition: "center", // Adjust the background position if needed
-                        }}
-                    >
-                        <h1>Sky</h1>
-                        <p> Sports 
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, maxime?</p>
-                    </motion.div>
-
-
-
-                </motion.div>
-
-            </div>
-            </div>
-        
+                </div>
+            ))}
+        </div>
+        </div>
     );
 }
 

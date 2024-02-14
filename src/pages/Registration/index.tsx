@@ -7,6 +7,7 @@ function Registration() {
     email: "",
     phone: "",
     college: "",
+    
   });
   const navigate = useNavigate();
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -27,7 +28,7 @@ function Registration() {
     //   console.log(formData);
     e.preventDefault();
     const { name, email, phone, college } = formData;
-    console.log(formData);
+    // console.log(formData);
 
     const response = await fetch("http://localhost:5000/api/auth/", {
       method: "POST",
