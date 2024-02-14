@@ -19,6 +19,7 @@ interface Event {
     location: string;
     date: string;
     link: string;
+    
 }
 
 const SportEventCard = () => {

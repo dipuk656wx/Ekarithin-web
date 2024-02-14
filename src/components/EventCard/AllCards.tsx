@@ -129,22 +129,23 @@ export default class AllCards extends Component<{}, AllCardsState> {
     return (
       <div className="container mx-auto px-4 py-8">
         <div className="text-white">
-          <span className="mr-4">
-            <Link to="/technical-Events" className="hover:text-green-800">
-              Technical Events
-            </Link>
-          </span>
-          <span className="mr-4">
-            <Link to="/cultural-events" className="hover:text-gray-800">
-              Cultural
-            </Link>
-          </span>
-          <span>
-            <Link to="/Sport-events" className="hover:text-gray-800">
-              Sports
-            </Link>
-          </span>
-        </div>
+  <span className="mr-4">
+    <Link to="/technical-events" className="hover:text-green-800">
+      Technical Events
+    </Link>
+  </span>
+  <span className="mr-4">
+    <Link to="/cultural-events" className="hover:text-gray-800">
+      Cultural
+    </Link>
+  </span>
+  <span>
+    <Link to="/sport-events" className="hover:text-gray-800">
+      Sports
+    </Link>
+  </span>
+</div>
+
         <h1 className="text-black text-center mb-4">Gallery Section</h1>
         <div className="max-w-screen-lg mx-auto">
           <Carousel

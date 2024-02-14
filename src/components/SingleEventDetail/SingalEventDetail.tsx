@@ -4,7 +4,7 @@ import React from 'react';
 
 const SingalEventDetail = () => {
   return (
-    <div style={{ backgroundImage: `url("/backGround.svg")` }}>
+    <div style={{  backgroundImage: `url("/backGround.svg")`  }} className=' h-["1100px"] w-["1100px"]'>
       <section className="about-section section-padding" id="section_2">
         <div className="container gap-2">
           <div className="row flex">

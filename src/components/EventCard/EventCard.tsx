@@ -47,6 +47,7 @@ const EventCard = () => {
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                 }}
+                                whileHover={{ scale: 1.1, transition: { duration: 0.5 } }} // Scale up on hover with transition
                             >
                                 <div>
                                     <p>{event.name}</p>

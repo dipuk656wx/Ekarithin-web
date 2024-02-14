@@ -194,5 +194,30 @@ export const CulturalEvent = [
         
         link: "",
       },
+      {
+        id: 20,
+        image: "../images/Arts.png",
+        name: "Art and Photography",
+        description:
+        "First of its kind, Ekarikthin'24 presents Art and Photography Exhibition cum Sales.Open to all Artists and Photographers, register to exhibit and sell your artworks and photographs.",
+        
+        rules:["On campus",""],
+        prizes:["1st","2nd","3rd"],
+        team: "Individual (1 person) ",
+        category:"Cultural",
+        fees:"onsite",
+        
+        
+        
+        contactInfo: [
+          "8794780425"
+        
+        ],
+        location: " Nit Nagaland",
+        date: "1-2 March 2024",
+        
+        link: "",
+      },
+      
 
 ]

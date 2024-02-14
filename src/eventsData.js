@@ -649,8 +649,10 @@ export const eventsData = [
     description:
     "First of its kind, Ekarikthin'24 presents Art and Photography Exhibition cum Sales.Open to all Artists and Photographers, register to exhibit and sell your artworks and photographs.",
     
-    
-    
+    rules:["On campus"],
+    prizes:"2",
+    fees:"onsite",
+    team: "Individual (1 person) ",
     category:"Cultural",
     
     contactInfo: [
