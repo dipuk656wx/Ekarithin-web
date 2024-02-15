@@ -90,10 +90,13 @@ const SingleEventDetail: React.FC = () => {
                   </CardTitle>
                 </div>
                 <div className="flex flex-col md:flex-row justify-center md:justify-between">
-                  <Button className="mt-4 px-6 py-3 rounded-full text-white font-semibold hover:bg-blue-600 bg-gradient-to-r from-blue-500 to-blue-700 md:mr-2">
+                  <Button className="mt-4 px-6 py-3 rounded-full text-white font-semibold hover:bg-blue-600 bg-gradient-to-r from-blue-400 to-blue-700 md:mr-2  hover:scale-50"
+                  //  whileHover={{ scale: 1.1, transition: { duration: 0.5 } }} // Scale up on hover with transition
+
+                  >
                     <a href={event.link}>Register</a>
                   </Button>
-                  <Button className="mt-4 px-6 py-3 rounded-full text-white font-semibold hover:bg-blue-600 bg-gradient-to-r from-blue-500 to-blue-700 md:ml-2">
+                  <Button className="mt-4 px-6 py-3 rounded-full text-white font-semibold hover:bg-blue-600 bg-gradient-to-r from-blue-400 to-blue-700 md:ml-2 hover:scale-50">
                     <a href="/events">Go to Events</a>
                   </Button>
                 </div>

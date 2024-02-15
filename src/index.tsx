@@ -38,7 +38,7 @@ root.render(
         <Route path="/" element={<Home/>} />
       
         <Route path="/events" element={<EventsPage/>}/>
-        <Route path="/register" element={<EventPage/>}/>
+        <Route path="/register" element={<Registration/>}/>
         <Route path="/technical-events" element={<TechnicalEventcard/>} />
         <Route path="/cultural-events" element={<EventCard/>}/>
         <Route path="/Sport-events" element={<SportEventCard/>}/>

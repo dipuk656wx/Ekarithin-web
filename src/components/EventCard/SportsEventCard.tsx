@@ -31,7 +31,7 @@ const SportEventCard = () => {
 
     return (
         <div>
-              <Header />
+             <div className=' gap-3'> <Header /> </div> 
             <div style={{ height:'100%', backgroundImage: `url("/backGround.svg")`, backgroundSize: 'cover', backgroundPosition: 'center',  alignItems: 'center' }} className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1 md:gap-2 xl:gap-9 px-4 bg-slate-700">
                 {SportAllData.map((event: Event, index: number) => (
                     <div key={index} className={`flip-card w-[400px] h-[360px] rounded-md cursor-pointer ${flippedIndex === index ? 'flipped' : ''}`} onClick={() => handleflip(index)}>
