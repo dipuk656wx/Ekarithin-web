@@ -32,14 +32,14 @@ root.render(
   <QueryClientProvider client={queryClient}>
     <Router>
       <Routes>
-        <Route path="/home" element={<Home />}/>
-        <Route path="/" element={<Home />} />
-
-        <Route path="/events" element={<EventsPage />} />
-        <Route path="/register" element={<EventPage />} />
-        <Route path="/technical-events" element={<TechnicalEventcard />} />
-        <Route path="/cultural-events" element={<EventCard />} />
-        <Route path="/Sport-events" element={<SportEventCard />} />
+      <Route path="/home" element={<Home/>} ></Route>
+        <Route path="/" element={<Home/>} />
+      
+        <Route path="/events" element={<EventsPage/>}/>
+        <Route path="/register" element={<Registration/>}/>
+        <Route path="/technical-events" element={<TechnicalEventcard/>} />
+        <Route path="/cultural-events" element={<EventCard/>}/>
+        <Route path="/Sport-events" element={<SportEventCard/>}/>
         <Route path="/cultural-event/:id" element={<SingalEventDetail />} />
         <Route path="/Technical-event/:id" element={<TechnicalSingal />} />
         <Route path="/Sports-event/:id" element={<SportSingle />} />

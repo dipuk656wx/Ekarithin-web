@@ -30,8 +30,8 @@ const EventCard = () => {
     }
 
     return (
-        <div>
-            <Header/>
+        <div  >
+            <div className=' gap-4'><Header/></div>
             <div style={{ backgroundImage: `url("/backGround.svg")` }} className="p-3 bg-cover grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1 md:gap-2 xl:gap-4 px-3 bg-slate-700">
                 {CulturalEvent.map((event: Event, index: number) => (
                     <div key={index} className={` p-2 flip-card w-[400px] h-[360px] rounded-md cursor-pointer ${flippedIndex === index ? 'flipped' : ''}`} onClick={() => handleflip(index)}>
