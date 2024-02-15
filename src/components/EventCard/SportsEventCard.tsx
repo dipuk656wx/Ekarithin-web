@@ -49,6 +49,7 @@ const SportEventCard = () => {
                                     backgroundPosition: "center",
                                     
                                 }}
+                                whileHover={{ scale: 1.1, transition: { duration: 0.5 } }}
                             >
                                 <div>
                                     <p>{event.name}</p>

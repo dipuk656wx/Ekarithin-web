@@ -60,7 +60,7 @@ const SportSingle: React.FC = () => {
                 top
                 src={event.image}
                 alt="Event Image"
-                className="object-cover h-96 w-full shadow" // Add shadow to CardImg
+                className="object-cover w-100 h-100 shadow" // Add shadow to CardImg
               />
             </Col>
             <Col sm="12" md="6">

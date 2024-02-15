@@ -47,6 +47,8 @@ const TechnicalEvent = () => {
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                 }}
+                                whileHover={{ scale: 1.1, transition: { duration: 0.5 } }}
+
                             >
                                 <div>
                                     <p>{event.name}</p> {/* Displaying event name */}
@@ -55,6 +57,7 @@ const TechnicalEvent = () => {
                                     <button className='Register-button' onClick={() => window.location.href = event.link}>Register</button>
                                     <button className='Details-button' onClick={() => window.location.href = `/Technical-event/${index}`}>Details</button>
                                 </div>
+                                
                             </motion.div>
 
                             <motion.div
