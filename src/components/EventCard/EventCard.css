@@ -1,5 +1,6 @@
 /* EventCard.css */
 
+
 .flip-card {
     perspective: 1000px;
 }
@@ -7,7 +8,7 @@
 .flip-card:hover .flip-card-inner {
     transform: scaleZ(1.1);
     box-shadow: 0 0 10px 5px rgba(255, 127, 14, 0.5);
-                
+
     background: linear-gradient(to bottom, #ff7f0e, #ffcc80);
 }
 
@@ -30,51 +31,68 @@
 @media screen and (max-width: 768px) {
     .flip-card {
         width: 100%;
-        max-width: 400px; /* Adjust max-width as needed */
+        max-width: 400px;
+        /* Adjust max-width as needed */
     }
-    
-    .flip-card-inner {  
+
+    .flip-card-inner {
         width: 100%;
     }
-    
+
     .flip-card-front,
     .flip-card-back {
         width: 100%;
     }
 }
+
 .Register-buttons-container {
     position: absolute;
-    bottom: 10px; /* Adjust the distance from the bottom as needed */
+    bottom: 10px;
+    /* Adjust the distance from the bottom as needed */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
 }
 
-.Register-button, .Details-button {
-    margin: 0 5px; /* Adjust margin as needed */
-    padding: 10px 20px; /* Adjust padding as needed */
+.Register-button,
+.Details-button {
+    margin: 0 5px;
+    /* Adjust margin as needed */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
     border: none;
-    background-color: white; /* Button background color */
-    color: black; /* Button text color */
-    border-radius: 5px; /* Button border radius */
+    background-color: white;
+    /* Button background color */
+    color: black;
+    /* Button text color */
+    border-radius: 5px;
+    /* Button border radius */
     cursor: pointer;
-    transition: all 0.3s ease; /* Transition for hover effect */
+    transition: all 0.3s ease;
+    /* Transition for hover effect */
     position: relative;
 }
 
-.Register-button:before, .Details-button:before {
+.Register-button:before,
+.Details-button:before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 5px; /* Button border radius */
-    background-color: rgba(0, 0, 0, 0.1); /* Button shadow color */
-    transition: opacity 0.3s ease; /* Transition for hover effect */
-    z-index: -1; /* Behind the button */
+    border-radius: 5px;
+    /* Button border radius */
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Button shadow color */
+    transition: opacity 0.3s ease;
+    /* Transition for hover effect */
+    z-index: -1;
+    /* Behind the button */
 }
 
-.Register-button:hover:before, .Details-button:hover:before {
-    opacity: 0.5; /* Change opacity on hover to create a shadow effect */
+.Register-button:hover:before,
+.Details-button:hover:before {
+    opacity: 0.5;
+    /* Change opacity on hover to create a shadow effect */
 }

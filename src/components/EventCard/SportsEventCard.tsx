@@ -19,6 +19,7 @@ interface Event {
     location: string;
     date: string;
     link: string;
+    
 }
 
 const SportEventCard = () => {
@@ -30,8 +31,8 @@ const SportEventCard = () => {
 
     return (
         <div>
-            <Header />
-            <div style={{ padding: "2px", backgroundImage: `url("/backGround.svg")` }} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols- lg:grid-cols-3 xl:grid-cols-3 gap-1 md:gap-2 xl:gap-2 px-3 bg-slate-700">
+              <Header />
+            <div style={{ height:'100%', backgroundImage: `url("/backGround.svg")`, backgroundSize: 'cover', backgroundPosition: 'center',  alignItems: 'center' }} className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1 md:gap-2 xl:gap-9 px-4 bg-slate-700">
                 {SportAllData.map((event: Event, index: number) => (
                     <div key={index} className={`flip-card w-[400px] h-[360px] rounded-md cursor-pointer ${flippedIndex === index ? 'flipped' : ''}`} onClick={() => handleflip(index)}>
                         <motion.div
@@ -41,13 +42,13 @@ const SportEventCard = () => {
                             transition={{ duration: 0.6 }}
                         >
                             <motion.div
-                                className='flip-card-front w-full h-full bg-cover border-[1px] text-white rounded-lg p-4 relative'
+                                className='flip-card-front w-full h-full bg-cover border-[1px] text-white rounded-lg p-4 relative hover:scale-110 hover:transi'
                                 style={{
                                     backgroundImage: `url(${event.image})`,
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
+                                    
                                 }}
-                                whileHover={{ scale: 1.1, transition: { duration: 0.5 } }} // Scale up on hover
                             >
                                 <div>
                                     <p>{event.name}</p>

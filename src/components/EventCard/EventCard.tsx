@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './EventCard.css';
 import { motion } from 'framer-motion';
-import { CulturalEvent } from './../../CulturalEvent'; // Ensure CulturalEvent contains the appropriate data
+import { CulturalEvent } from './../../CulturalEvent';
+
 import Header from '../header';
 
 interface Event {
@@ -30,7 +31,7 @@ const EventCard = () => {
     return (
         <div>
             <Header />
-            <div style={{ backgroundImage: `url("/backGround.svg")` }} className="p-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1 md:gap-2 xl:gap-2 px-3 bg-slate-700">
+            <div style={{ backgroundImage: `url("/backGround.svg")` }} className="p-3 bg-cover grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1 md:gap-2 xl:gap-4 px-3 bg-slate-700">
                 {CulturalEvent.map((event: Event, index: number) => (
                     <div key={index} className={` p-2 flip-card w-[400px] h-[360px] rounded-md cursor-pointer ${flippedIndex === index ? 'flipped' : ''}`} onClick={() => handleflip(index)}>
                         <motion.div
