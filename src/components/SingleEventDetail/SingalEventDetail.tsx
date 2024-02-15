@@ -12,6 +12,7 @@ import {
   Col,
   Row,
 } from "reactstrap";
+import Header from "../header";
 
 interface Event {
   id: number;
@@ -46,9 +47,10 @@ const SingleEventDetail: React.FC = () => {
   }
 
   return (
-    <div className="bg-gray-200 min-h-screen text-white">
+    <div className="bg-gray-200 min-h-screen gap-3 text-white">
+      <Header/>
       <div
-        className="container mx-auto px-4 py-8 "
+        className="container mx-auto px-4 py-8 gap-y-3  "
         style={{ backgroundImage: `url("/backGround.svg")` }}
       >
         <Card className="shadow-lg">

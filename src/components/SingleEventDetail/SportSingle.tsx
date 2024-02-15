@@ -14,6 +14,7 @@ import {
   Row,
 } from "reactstrap";
 import { SportAllData } from "../../SportData";
+import Header from "../header";
 
 interface Event {
   id: number;
@@ -44,11 +45,12 @@ const SportSingle: React.FC = () => {
   );
 
   if (!event) {
-    return <div className="bg-red-200 p-4">Event not found</div>;
+    return <div className="bg-red-200 gap-4 p-4">Event not found</div>;
   }
 
   return (
     <div className="bg-gray-200 min-h-screen text-white">
+      <Header/>
       <div
         className="container mx-auto px-4 py-8 "
         style={{ backgroundImage: `url("/backGround.svg")` }}

@@ -6,7 +6,7 @@ import './style.css'
 const pages = [
     { label: "Events", value: "events" },
     { label: "Register (NITN)", value: "register" },
-    { label: "Home", value: "home" },
+
 ];
 const Header = () => {
     const navigate = useNavigate();
@@ -27,7 +27,7 @@ const Header = () => {
         <div className="relative">
             {/* <Header/> */}
             
-            <div className="text-white flex justify-between p-2 z-10 border-b border-b-gray-light bg-gray-dark">
+            <div className="text-white flex justify-between gap-2 p-2 z-10 border-b border-b-gray-light bg-gray-dark">
                 <div className="font-bold items-center justify-center flex">
 
                     <img src="/images/ekarikthin logo.png" className="w-[50px] h-[50px]" alt="Logo" />
@@ -36,6 +36,8 @@ const Header = () => {
                     </span>
                 </div>
                 <div className="flex items-center menu mr-10">
+                <div className=" font-white"><a href="/">Home</a></div>
+
                     {pages.map((page) => (
                         <div
                             className="px-3 py-1 border-b-2 border-gray-dark font-bold hover:border-yellow-400 cursor-pointer text-[17px]"
@@ -65,6 +67,7 @@ const Header = () => {
                         style={{ width: '200px', zIndex: 10000 }}
                     >
                         <div className="gap-3 flex flex-col pt-4 text-[15px]">
+                            <div className=" text-white"><a href="/">Home</a></div>
                             {pages.map((page) => (
                                 <div
                                     className="flex h-[30px] items-center gap-2.5 shrink-0 p-4 hover:cursor-pointer border-b-2 border-gray-dark hover:bg-gray-light hover:text-blue-400"

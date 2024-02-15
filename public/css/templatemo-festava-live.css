@@ -4,8 +4,8 @@
   --primary-color:                #F8CB2E;
   --secondary-color:              #EE5007;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #EE5007;
-  --custom-btn-bg-hover-color:    #c01f27;
+  --custom-btn-bg-color:          #007FFF;
+  --custom-btn-bg-hover-color:    #00FFFF;
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #7fffd4;
@@ -270,7 +270,7 @@ strong {
 }
 
 .custom-icon {
-  color: var(--secondary-color);
+  color: var(--custom-btn-bg-color);
 }
 
 
@@ -598,7 +598,7 @@ strong {
 }
 
 .social-icon-link {
-  background: var(--secondary-color);
+  background: var(--custom-btn-bg-color);
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);

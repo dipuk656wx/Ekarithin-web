@@ -31,7 +31,7 @@ const TechnicalEvent = () => {
     return (
         <div>
             <Header />
-            <div style={{height:'fit-content', backgroundImage: `url("/backGround.svg")`, backgroundSize: 'cover', backgroundPosition: 'center',alignItems: 'center' }}className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1 md:gap-2 xl:gap-2 px-3 bg-slate-700 h-full w-full"> {/* Adjust grid layout based on screen size */}
+            <div style={{height:'fit-content', backgroundImage: `url("/backGround.svg")`, backgroundSize: 'cover', backgroundPosition: 'center',alignItems: 'center' }}className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1 md:gap-2 xl:gap-2 px-3 bg-slate-700 h-full w-full"> {/* Adjust grid layout based on screen size */}
                 {TechEventData.map((event: Event, index: number) => ( // Explicitly typing event and index
                     <div key={index} className={`flip-card w-[400px] h-[360px] rounded-md cursor-pointer ${flippedIndex === index ? 'flipped' : ''}`} onClick={() => handleflip(index)}>
                         <motion.div

@@ -14,6 +14,7 @@ import {
   Row,
 } from "reactstrap";
 import { TechEventData } from "../../TechData";
+import Header from "../header";
 
 interface Event {
   id: number;
@@ -48,9 +49,10 @@ const TechnicalSingal: React.FC = () => {
   }
 
   return (
-    <div className="bg-gray-200 min-h-screen text-white">
+    <div className="bg-gray-200 gap-3 min-h-screen text-white">
+      <Header/>
       <div
-        className="container mx-auto px-4 py-8 "
+        className="container mx-auto p-4 px-4 py-8 "
         style={{ backgroundImage: `url("/backGround.svg")` }}
       >
         <Card className="shadow-lg">
