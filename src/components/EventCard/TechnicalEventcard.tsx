@@ -53,7 +53,7 @@ const TechnicalEvent = () => {
                                 </div>
                                 <div className="Register-buttons-container">
                                     <button className='Register-button' onClick={() => window.location.href = event.link}>Register</button>
-                                    <button className='Details-button' onClick={() => window.location.href = `/Details/${index}`}>Details</button>
+                                    <button className='Details-button' onClick={() => window.location.href = `/Technical-event/${index}`}>Details</button>
                                 </div>
                             </motion.div>
 

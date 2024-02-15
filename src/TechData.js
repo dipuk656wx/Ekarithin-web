@@ -1,6 +1,6 @@
 export const TechEventData = [
     {
-        id: 1,
+        id: 0,
         image: "../images/coderaze.png",//poser of particular Event
         name: "CodeRaze",
         description:
@@ -32,11 +32,11 @@ export const TechEventData = [
         location: " Online / Offline (vc hall )",
         date: "02 March 2024",
         
-        link: "",
+        link: "https://forms.gle/YoispgeabZ4dWc9e9",
       },
     
       {
-        id: 2,
+        id: 1,
         image: "../images/RoboGP.png",//poser of particular Event
         name: "RoboGP",
         description:
@@ -63,13 +63,13 @@ export const TechEventData = [
           
           "Tsiejutho Katiry : 8974101657"
         ],
-        location: " ",
+        location: "NIT Nagaland ",
         date: "02 March 2024",
         
-        link: "",
+        link: "https://forms.gle/96nyyFDsokxmdKA19",
       },
       {
-        id: 3,
+        id: 2,
         image: "../images/PitchPerfect.jpg",//poser of particular Event
         name: "Pitch Perfect",
         description:
@@ -99,10 +99,10 @@ export const TechEventData = [
         location: " To be updated",
         date: "01 March 2024",
         
-        link: "",
+        link: "https://forms.gle/cr3UHzmne9X3ksca7",
       },
       {
-        id: 4,
+        id: 3,
         image: "../images/SpellBee.jpg",//poser of particular Event
         name: "Spell Bee",
         description:
@@ -126,10 +126,10 @@ export const TechEventData = [
         location: " To be updated ",
         date: "01 March 2024",
         
-        link: "",
+        link: "https://forms.gle/sqnZNXWARx81GneK9",
       },
       {
-        id: 5,
+        id: 4,
         image: "../images/CircuitX.jpg",//poser of particular Event
         name: "CircuitX ",
         description:
@@ -156,10 +156,10 @@ export const TechEventData = [
         location: " To be updated ",
         date: "01 March 2024",
         
-        link: "",
+        link: "https://forms.gle/DkC4pYh1D28MYdtc8",
       },
       {
-        id: 6,
+        id: 5,
         image: "/images/IntegrationBee.jpg",//poser of particular Event
         name: "Integration Bee",
         description:
@@ -186,7 +186,7 @@ export const TechEventData = [
         link: "",
       },
       {
-        id: 7,
+        id: 6,
         image: "/images/Innovateathon.png",//poser of particular Event
         name: "Innovate-a-thon",
         description:
@@ -216,10 +216,10 @@ export const TechEventData = [
         location: " To be updated",
         date: "01 March 2024",
         
-        link: "",
+        link: "https://forms.gle/Hrc5JCGDGCR8hYDe6",
       },
       {
-        id: 8,
+        id: 7,
         image: "../images/TradersHunt.png",
         name: "Traders Hunt",
         description:
@@ -243,10 +243,10 @@ export const TechEventData = [
         location: " To be updated ",
         date: "01 March 2024",
         
-        link: "",
+        link: "https://forms.gle/kCV1waL7gqGhb1pV6",
       },
       {
-        id: 9,
+        id: 8,
         image: "../images/Survive.png",
         name: "Survive-iNIT",
         description:
@@ -270,10 +270,10 @@ export const TechEventData = [
         location: " To be updated ",
         date: "02 March 2024",
         
-        link: "",
+        link: "https://forms.gle/ULKqmxrojYhKQ5e5A",
       },
       {
-        id: 10,
+        id: 9,
         image: "../images/BrainSnap.png",
         name: "BrainSnap",
         description:
@@ -297,10 +297,10 @@ export const TechEventData = [
         location: " To be updated",
         date: "02 March 2024",
         
-        link: "",
+        link: "https://forms.gle/PKUoyTSsyRME6QHK8",
       },
       {
-        id: 11,
+        id: 10,
         image: "../images/Shark.png",
         name: "Shark Tank India",
         description:
@@ -326,7 +326,7 @@ export const TechEventData = [
         location: " To be updated",
         date: "02 March 2024",
         
-        link: "",
+        link: "https://forms.gle/BuMhpPVq5s5c5RZ9A",
       },
       
 ]

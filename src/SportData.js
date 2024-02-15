@@ -1,6 +1,6 @@
 export const SportAllData = [
     {
-      id: 17,
+      id: 0,
       image: "../images/bgmi.png",
       name: "BGMI",
       description:
@@ -22,10 +22,10 @@ export const SportAllData = [
       contactInfo: ["8974672094"],
       location: "To be updated",
       date: "01 March 2024",
-      link: "",
+      link: "https://forms.gle/6aT2YCQGmDWT5K338",
     },
     {
-      id: 18,
+      id: 1,
       image: "../images/mlbb.png",
       name: "Mobile Legends",
       description:
@@ -49,10 +49,10 @@ export const SportAllData = [
       contactInfo: ["9863667129", "9362723951"],
       location: "To be updated",
       date: "01 March 2024",
-      link: "",
+      link: "https://forms.gle/ukibdNPV3pxarzvQ6",
     },
     {
-      id: 19,
+      id: 2,
       image: "../images/biking.png",
       name: "XCC Mountain Biking",
       description: "Explore, conquer, and leave your tire marks on the trails of exhilaration",
@@ -71,7 +71,7 @@ export const SportAllData = [
       fees:"₹300 for home state ",
       location: "To be updated",
       date: "02 March 2024",
-      link: "",
+      link: "https://forms.gle/sYH5ZYcffQ4x73XCA",
     }
     
   ];

@@ -1,6 +1,6 @@
 export const CulturalEvent = [
     {
-        id: 12,
+        id: 0,
         image: "/images/Cosplay.png",
         name: "Cosplay",
         description:
@@ -27,10 +27,10 @@ export const CulturalEvent = [
         location: "Basketball Court, Nit Nagaland ",
         date: "02 March 2024",
         
-        link: "https://docs.google.com/forms/d/e/1FAIpQLSczGo6OwAHssO_Z2i80Al0_IXjiFRJ41f0w1mO20j1ZiIoTtA/viewform?usp=sf_link",
+        link: "https://forms.gle/5thof9AjQcGLWMXM7"
       },
       {
-        id: 13,
+        id: 1,
         image: "../images/Dance.png",
         name: "Feet On Fire",
         description:
@@ -81,10 +81,10 @@ export const CulturalEvent = [
         location: " Basket court, Nit Nagaland ",
         date: "02 March 2024",
         
-        link: "https://www.fb.com",
+        link: "https://forms.gle/iq5JajAnxSNUgUa29",
       },
       {
-        id: 14,
+        id: 2,
         image: "../images/Rockville.png",
         name: "Rockville",
         description:
@@ -115,10 +115,10 @@ export const CulturalEvent = [
         location: " Basketball court, Nit Nagaland",
         date: "02 March 2024",
         
-        link: "",
+        link: "https://forms.gle/bpMWJS9HSBS1twBs8",
       },
       {
-        id: 15,
+        id: 3,
         image: "../images/ritzy.jpg",
         name: "Ritzy",
         description:
@@ -154,11 +154,11 @@ export const CulturalEvent = [
         location: " Basketball court, Nit Nagaland",
         date: "01 March 2024",
         
-        link: "",
+        link: "https://forms.gle/wX8FV1MMQF9146DLA",
       },
 
       {
-        id: 16,
+        id: 4,
         image: "../images/Voice.png",
         name: "Voice of Ekarikthin",
         description:
@@ -192,10 +192,10 @@ export const CulturalEvent = [
         location: " Basketball court, Nit Nagaland",
         date: "01 March 2024",
         
-        link: "",
+        link: "https://forms.gle/NpUy5ccGQkdESDJj8",
       },
       {
-        id: 20,
+        id: 5,
         image: "../images/Arts.png",
         name: "Art and Photography",
         description:
