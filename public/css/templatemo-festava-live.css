@@ -107,12 +107,12 @@ button {
 
 a {
   display: inline-block;
-  color: var(--primary-color);
+  color: #007FFF;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--link-hover-color);
+  color:  #00FFFF;
 }
 
 b,
@@ -564,12 +564,12 @@ strong {
 }
 
 .site-footer-title {
-  color: var(--primary-color); 
+  color: #007FFF;
 }
 
 .site-footer-link,
 .copyright-text {
-  color: var(--white-color);
+  color: #00FFFF;
 }
 
 .site-footer-links {
