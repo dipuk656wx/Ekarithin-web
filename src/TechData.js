@@ -183,7 +183,7 @@ export const TechEventData = [
         location: " To be updated",
         date: "01 March 2024",
         
-        link: "",
+        link: "https://forms.gle/9vEYgzXYFFZLp9ut5",
       },
       {
         id: 6,
@@ -216,7 +216,7 @@ export const TechEventData = [
         location: " To be updated",
         date: "01 March 2024",
         
-        link: "https://forms.gle/Hrc5JCGDGCR8hYDe6",
+        link: "https://forms.gle/2h38XKjHpxFfzMkz9",
       },
       {
         id: 7,

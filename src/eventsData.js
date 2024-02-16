@@ -656,13 +656,100 @@ export const eventsData = [
     category:"Cultural",
     
     contactInfo: [
-      "8794780425"
+      "6009327901"
     
     ],
     location: " Nit Nagaland",
     date: "1-2 March 2024",
     
-    link: "",
+    link: "https://forms.gle/GskfY9KTBAma7Zk87",
   },
+  {
+    id:21,
+    image: "../images/tresure.jpg",
+    name: "TREASURE HUNT",
+    description:
+      "During a logical questions treasure hunt, participants will be given a series of clues or challenges that require logical thinking and problem-solving skills. These clues will be delivered through a variety of formats, such as puzzles, riddles, or logic games, and will require participants to use their critical thinking and reasoning abilities to solve them. As participants solve each clue, they will be led to the next one until they reach the final treasure.",
+    rules: [
+      "All items must be found on the premises; no leaving your location",
+      "Each item can only be used once to fulfill an entry.",
+      "All photos or videos must be taken by the players—no screenshots, please!",
+      "Send all photos at once to avoid overwhelming the host with messages.",
+      "Any responses submitted after the time frame are ineligible.",
+      "The clues are to be found in a particular order.",
+      "A team cannot skip a clue. Skipping a clue leads to the disqualification of the team."
+    ],
+    prizes: ["EXICITING PRIZES AND REWARDS"],
+    fees: "50",
+    team: "Individual",
+    category:"Cultural",
+    contactInfo: ["Ankur Aditya : 8434262936",
+                    "Bipin Kumar:8922057604"],
+    location: "A WING",
+    date:"1 march 2024",
+    link: "https://forms.gle/9r2LyEFxewk2QX4j6",
+  },
+  
+{
+  id:22,
+  image:"../images/esc.jpg",
+  name: "ESCAPE ROOM",
+  description:
+    "During a logical questions escape room, participants will be given a series of clues or challenges that require logical thinking and problem-solving skills. These clues will be delivered through a variety of formats, such as puzzles, riddles, or logic games, and will require participants to use their critical thinking and reasoning abilities to solve them. As participants solve each clue, they will be led to the next one until they get out of the room.",
+  rules: [
+    "All items must be found on the premises; no leaving your location",
+    "Each item can only be used once to fulfill an entry.",
+    "Any responses submitted after the time frame are ineligible.",
+    "The clues are to be found in a particular order.",
+    "A team cannot skip a clue. Skipping a clue leads to the disqualification of the team."
+  ],
+  prizes: ["EXICITING PRIZES AND REWARDS"],
+  fees: "50",
+  team: "Individual",
+  category:"Cultural",
+  contactInfo: ["Ankur Aditya : 8434262936",
+                  "Rahul Bairwa:7230907884"],
+  location: "A WING",
+  date:"1 march 2024",
+  link: "https://forms.gle/e4qKQsPKegA6etNn6",
+},
+
+{
+  id: 23,
+  image: "../images/rang.png",
+  name: "Rangoli",
+  description:
+    "Experience the vibrant tradition of Rangoli at our upcoming event! Join us for a celebration of artistic expression as participants create intricate and colorful designs using vibrant powders and delicate handwork. Immerse yourself in the rich cultural heritage as talented artists showcase their skills, transforming the canvas with mesmerizing patterns. This Rangoli event promises a visual feast of creativity, fostering community spirit and appreciation for this age-old Indian art form. Come together to witness the beauty and harmony of colors at our unforgettable Rangoli extravaganza!",
+  rules: [
+ 
+  ],
+  prizes: ["RS-3000"],
+  fees: "100",
+  team: "2 members",
+  category: "Cultural",
+  contactInfo: ["Ankit Kumar : 9863953256", "Puja Roy:6204989550"],
+  location: "NIT Nagaland ",
+  date: "1 march 2024",
+  link: "https://forms.gle/CyQMVm3qNCwJgCXX8",
+},
+{
+  id: 24,
+  image: "../images/short.png",
+  name: "Short Film Contest",
+  description:
+    "Experience the vibrant tradition of Rangoli at our upcoming event! Join us for a celebration of artistic expression as participants create intricate and colorful designs using vibrant powders and delicate handwork. Immerse yourself in the rich cultural heritage as talented artists showcase their skills, transforming the canvas with mesmerizing patterns. This Rangoli event promises a visual feast of creativity, fostering community spirit and appreciation for this age-old Indian art form. Come together to witness the beauty and harmony of colors at our unforgettable Rangoli extravaganza!",
+  rules: [
+ 
+  ],
+  prizes: ["Rs-3000"],
+  fees: "101",
+  team: "Max 8 people",
+  category: "Cultural",
+  contactInfo: ["Rajesh Kumar : 6202914783", "Vezonu Thira :6909931086, Rohit Raj : 8271083603"],
+  location: "NIT Nagaland ",
+  date: "1 march 2024",
+  link: "https://forms.gle/ahMxoSs48g4QaosT9",
+},
+  
   
 ];
