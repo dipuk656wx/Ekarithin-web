@@ -716,7 +716,7 @@ export const eventsData = [
 
 {
   id: 23,
-  image: "../images/rang.png",
+  image: "../images/rang.jpg",
   name: "Rangoli",
   description:
     "Experience the vibrant tradition of Rangoli at our upcoming event! Join us for a celebration of artistic expression as participants create intricate and colorful designs using vibrant powders and delicate handwork. Immerse yourself in the rich cultural heritage as talented artists showcase their skills, transforming the canvas with mesmerizing patterns. This Rangoli event promises a visual feast of creativity, fostering community spirit and appreciation for this age-old Indian art form. Come together to witness the beauty and harmony of colors at our unforgettable Rangoli extravaganza!",
